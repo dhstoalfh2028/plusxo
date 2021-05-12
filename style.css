@@ -513,12 +513,12 @@ p {
 }
 .idframe>.box2>.box2-1:hover .add{
     opacity: 1;
-    transition: 0.5s
+    transition: 0.5s;
     cursor: pointer;
 }
 .idframe>.box2>.box2-2:hover .add2{
     opacity: 1;
-    transition: 0.2s
+    transition: 0.2s;
     cursor: pointer;
 }
 .idframe>.box2>.box2-2 {
