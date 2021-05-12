@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -30,13 +32,28 @@
                 <li>ID FRAME</li>
                 <li>Object by 3</li>
                 <li>X Edition</li>
+                <li class="toggle">
+                    <i class="fas fa-bars"></i>
+                </li>
             </ul>
          </div>
+         <div class="hide">
+            <ul>
+                <li>PlusX Object</li>
+                <li>ID FRAME</li>
+                <li>Object by 3</li>
+                <li>X Edition</li>
+            </ul>
+            <div class="close-btn"></div>
+        </div>
          <div class="menu2">
              <ul>
                  <li>Login</li>
                  <li>Join</li>
                  <li>Cart(0)</li>
+                 <li>
+                    <i class="far fa-user"></i>
+                 </li>
              </ul>
          </div>
     </div>
@@ -53,7 +70,7 @@
     <div class="movebar con-min-width">
         <div class="movebar__text">Plus object + for your life X Plus inspiration + foyou creative
         <div class="movebar__gap"></div>
-       Plus object + for your life X Plus inspiration + foyou creative</div>
+       Plus object + for your life X Plus inspiration + for your creative</div>
     
     </div>
     <div class="con">
@@ -231,11 +248,11 @@
                 </div>
             </div>
             <div class="box2-2">
-                    <h3>ID FRAME 2.0 WHITE</h3>
+                    <h3>ID FRAME 2.0 BLACK</h3>
                     <br>
                     <P>21,400원</P>
                 <div class="add2">
-                        <h3>ID FRAME 2.0 WHITE</h3>
+                        <h3>ID FRAME 2.0 BLACK</h3>
                         <br>
                         <P>21,400원</P>
                         <div class="click">
@@ -299,7 +316,7 @@
 
     <script>
             var swiper = new Swiper('.swiper-container', {
-              slidesPerView: 3,
+              slidesPerView: 1,
               spaceBetween: 30,
               slidesPerGroup: 1,
               loop: true,
@@ -312,6 +329,28 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
               },
+              breakpoints: {
+                1340: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                },
+                1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                },
+                520: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                450: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                },
+            }
             });
 
             $('.movebar').marquee({
@@ -320,6 +359,13 @@
                 direction: 'left',
                 duplicated:true,
                 delayBeforeStart: 0
+            });
+
+            $(".toggle").click(function(){
+                $(".hide").addClass("active");
+            });
+            $(".hide > .close-btn").click(function(){
+                $(".hide").removeClass("active");
             });
 
 
