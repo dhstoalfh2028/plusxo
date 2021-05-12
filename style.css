@@ -96,6 +96,7 @@ a {
 .nav>.menu1>ul li:hover {
     font-weight: 900;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 
@@ -122,6 +123,7 @@ a {
 .nav>.menu2>ul>li:last-child:hover {
     color: rgb(221, 65, 8);
     transition: 0.5s;
+    cursor: pointer;
 }
 .main {
     overflow: hidden;
@@ -512,10 +514,12 @@ p {
 .idframe>.box2>.box2-1:hover .add{
     opacity: 1;
     transition: 0.5s
+    cursor: pointer;
 }
 .idframe>.box2>.box2-2:hover .add2{
     opacity: 1;
     transition: 0.2s
+    cursor: pointer;
 }
 .idframe>.box2>.box2-2 {
     background-image: url(img/1000000006_main_017.jpg);
@@ -624,6 +628,7 @@ h3 {
     background-color: black;
     color: white;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 
@@ -669,6 +674,7 @@ footer .box1 ul li {
 footer .box1 ul li:hover {
     font-weight: 900;
     transition: 0.5s;
+    cursor: pointer;
 }
 footer .box2 p{
     float: left;
@@ -792,10 +798,12 @@ body {
     background-color: black;
     color: white;
     transition: 0.5s;
+    cursor: pointer;
 }
 .swiper-slide>.con1:hover .con1-1 {
     opacity: 1;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 
@@ -865,10 +873,12 @@ body {
     background-color: black;
     color: white;
     transition: 0.5s;
+    cursor: pointer;
 }
 .swiper-slide>.con2:hover .con2-1 {
     opacity: 1;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 
@@ -935,10 +945,12 @@ body {
     background-color: black;
     color: white;
     transition: 0.5s;
+    cursor: pointer;
 }
 .swiper-slide>.con3:hover .con3-1 {
     opacity: 1;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 
@@ -1006,10 +1018,12 @@ body {
     background-color: black;
     color: white;
     transition: 0.5s;
+    cursor: pointer;
 }
 .swiper-slide>.con4:hover .con4-1 {
     opacity: 1;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 
@@ -1076,10 +1090,12 @@ body {
     background-color: black;
     color: white;
     transition: 0.5s;
+    cursor: pointer;
 }
 .swiper-slide>.con5:hover .con5-1 {
     opacity: 1;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 
@@ -1146,10 +1162,12 @@ body {
     background-color: black;
     color: white;
     transition: 0.5s;
+    cursor: pointer;
 }
 .swiper-slide>.con6:hover .con6-1 {
     opacity: 1;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 
