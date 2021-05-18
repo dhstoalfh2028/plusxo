@@ -168,9 +168,32 @@ a {
 .main>.sound>.mov_text {
     width: 100%;
     height: 100%;
-    background-image: url(img/txt_volum.png);
     background-size: contain;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
 }
+.main>.sound>.mov_text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 112px;
+    height: 112px;
+    background-image: url(img/txt_volum.png);
+    background-size: 112px 112px;
+    /* 애니메이션: 애니메이션의 이름 효과 */
+    animation: rotate linear 6s infinite;
+    -webkit-animation: rotate linear 6s infinite;
+    -ms-animation: rotate linear 6s infinite;
+    z-index: 999;
+  }
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 .movebar {
     max-width: 1920px;
     width: 100%;
